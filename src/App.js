@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './common/Header.js';
+import HomePage from './home/HomePage.js';
+import AboutPage from './about/AboutPage.js';
+import PillarsPage from './pillars-temp/PillarsPage.js';
+import Footer from './common/Footer.js';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Router>
+        <div>
+          <Header/>
+          {/* A <Switch> looks through its children <Route>s and
+              renders the first one that matches the current URL. */}
+          <Switch>
+            <Route path="/about">
+              <AboutPage />
+            </Route>
+            <Route path="/pillars">
+              <PillarsPage />
+            </Route>
+            <Route path="/">
+              <HomePage />
+            </Route>
+          </Switch>
+        </div>
+      </Router>
+      <Footer />
     </div>
   );
+
 }
 
 export default App;

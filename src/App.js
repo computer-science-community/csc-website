@@ -2,6 +2,7 @@ import Header from './common/Header.js';
 import HomePage from './home/HomePage.js';
 import AboutPage from './about/AboutPage.js';
 import PillarsPage from './pillars-temp/PillarsPage.js';
+import ContactUsPage from './contact/ContactUsPage.js';
 import Footer from './common/Footer.js';
 import {
   BrowserRouter as Router,
@@ -15,13 +16,15 @@ function App() {
       <Router>
         <div>
           <Header/>
-
           <Switch>
             <Route path="/about">
               <AboutPage />
             </Route>
             <Route path="/pillars">
               <PillarsPage />
+            </Route>
+            <Route path="/contact">
+              <ContactUsPage />
             </Route>
             <Route path="/">
               <HomePage />

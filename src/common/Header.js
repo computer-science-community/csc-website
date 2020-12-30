@@ -14,6 +14,7 @@ function Header() {
                     <NavLink exact to="/" className="mdl-navigation__link" activeClassName="is-active">Home</NavLink>
                     <NavLink exact to="/about" className="mdl-navigation__link" activeClassName="is-active">About</NavLink>
                     <NavLink exact to="/pillars" className="mdl-navigation__link" activeClassName="is-active">Pillars</NavLink>
+                    <NavLink exact to="/contact" className="mdl-navigation__link" activeClassName="is-active">Contact Us</NavLink>
                 </nav>
             </div>
         </header>

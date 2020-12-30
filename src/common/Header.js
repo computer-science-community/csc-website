@@ -1,23 +1,22 @@
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
+import './Header.css';
 
 function Header() {
     return (
-    <div>
-        <h1>Header</h1>
-        <nav>
-            <ul>
-                <li>
-                    <Link to="/">Home</Link>
-                </li>
-                <li>
-                    <Link to="/about">About</Link>
-                </li>
-                <li>
-                    <Link to="/pillars">Pillars</Link>
-                </li>
-            </ul>
-        </nav>
-    </div>
+        <header className="mdl-layout__header mdl-layout__header--waterfall header">
+            <div className="mdl-layout__header-row logo-row">
+                <span className="mdl-layout__title">
+                    <div className="logo"></div>
+                </span>
+            </div>
+            <div className="mdl-layout__header-row navigation-row mdl-layout--large-screen-only">
+                <nav className="mdl-navigation mdl-typography--body-1-force-preferred-font">
+                    <NavLink exact to="/" className="mdl-navigation__link" activeClassName="is-active">Home</NavLink>
+                    <NavLink exact to="/about" className="mdl-navigation__link" activeClassName="is-active">About</NavLink>
+                    <NavLink exact to="/pillars" className="mdl-navigation__link" activeClassName="is-active">Pillars</NavLink>
+                </nav>
+            </div>
+        </header>
     );
 }
 

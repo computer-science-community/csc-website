@@ -1,0 +1,11 @@
+.banner{
+    background-image: url('https://superblendyyc.com/wp-content/uploads/2020/03/banner-placeholder-1.jpg');
+    padding-top: 15%;
+    padding-bottom: 15%;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+h1{
+    margin-left: 25%;
+}

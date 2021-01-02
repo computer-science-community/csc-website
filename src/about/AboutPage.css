@@ -1,0 +1,18 @@
+.about-h1{
+    margin-left: 0rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.about-h1.first{
+    margin-top: 3rem;
+}
+
+.about-p{
+    font-size: large;
+    line-height: 2rem;
+}
+
+.about-p.last{
+    margin-bottom: 3rem;
+}

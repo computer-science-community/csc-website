@@ -3,7 +3,6 @@ import './ContactUsPage.css';
 import Card from 'react-bootstrap/Card';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import { alignPropType } from "react-bootstrap/esm/DropdownMenu";
 
 function ContactUsPage() {
     return(
@@ -11,10 +10,12 @@ function ContactUsPage() {
             <Row>
                 <Col>
                     <br />
+                    {/* Card is to create a nice container for the form */}
                     <Card className="about-card" border="danger">
                         <Card.Body>
                             <Card.Title>Contact Us</Card.Title>
                             <Card.Text>
+                                {/* Contact form starts here */}
                                 <Form>
                                     <Form.Group controlId="exampleForm.ControlInput1">
                                         <Form.Label>Email address</Form.Label>
@@ -46,6 +47,7 @@ function ContactUsPage() {
                                     </Form.Group>
                                     <Button className="float-right" variant="danger" type="submit" size="lg">Submit</Button>
                                 </Form>
+                                {/* Contact form ends here */}
                             </Card.Text>
                         </Card.Body>
                     </Card>

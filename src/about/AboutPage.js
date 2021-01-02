@@ -1,6 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
 import './AboutPage.css';
-import Carousel from 'react-bootstrap/Carousel';
 
 function AboutPage() {
     return (

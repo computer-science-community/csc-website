@@ -14,7 +14,9 @@ function HomePage() {
                 </Row>
                 <Row>
                     <Col>
+                    {/* Card Deck holds the three homepage articles of news, below the title banner */}
                         <CardDeck>
+                            {/* Card for the Compettitve Coding Pillar's News */}
                             <Card>
                                 <Card.Body>
                                     <Card.Title>Monthly Challenge</Card.Title>
@@ -26,6 +28,7 @@ function HomePage() {
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
+                            {/* Card for the Social Upcoming Events (Social Pillar) */}
                             <Card>
                                 <Card.Body>
                                     <Card.Title>Upcoming Events</Card.Title>
@@ -37,6 +40,7 @@ function HomePage() {
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
+                            {/* Card for the Golisano Wide News (Ambassadors) */}
                             <Card>
                                 <Card.Body>
                                     <Card.Title>News</Card.Title>

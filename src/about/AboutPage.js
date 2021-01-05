@@ -1,9 +1,9 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row} from "react-bootstrap";
 import './AboutPage.css';
 
 function AboutPage() {
     return (
-        <div class="about">
+        <div className="about">
             <Container>
                 <Row>
                     <h1 className="about-h1 first">Who We Are</h1>

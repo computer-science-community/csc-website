@@ -40,9 +40,9 @@
 }
 
 .is-compact .logo {
-  height: 50px;
-  width: 50px;
-  margin-top: 7px;
+  height: 60px;
+  width: 100px;
+  margin-top: 1px;
 }
 
 .navigation-row {

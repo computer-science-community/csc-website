@@ -1,7 +1,7 @@
 import './Footer.css';
 
 function Footer() {
-    return (<footer className="mdl-mini-footer">
+    return (<footer className="mdl-mini-footer" id="footer">
                 <div className="mdl-mini-footer__left-section">
                     <div className="mdl-logo">Copyright © Rochester Institute of Technology</div>
                 </div>

@@ -6,7 +6,7 @@ import Button from 'react-bootstrap/Button';
 
 function ContactUsPage() {
     return(
-        <Container>
+        <Container className="contact">
             <Row>
                 <Col>
                     <br />

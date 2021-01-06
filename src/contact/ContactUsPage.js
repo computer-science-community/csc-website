@@ -5,6 +5,15 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { useState } from "react";
 
+function emailSelect() {
+    var d = document.getElementById("selected");
+    var displayText = "";
+    if (d) {
+        displayText = d.options[d.selectedIndex].text;
+        document.getElementById("dis_email").value = displayText;
+    }
+}
+
 function ContactUsPage() {
 
     const [validated, setValidated] = useState(false);
@@ -30,13 +39,13 @@ function ContactUsPage() {
                             <Card.Title>Contact Us</Card.Title>
                                 {/* Contact form starts here */}
                                 <Form noValidate validated={validated} onSubmit={handleSubmit}>
-                                    <Form.Group controlId="emailfrom">
+                                    <Form.Group id="emailfrom">
                                         <Form.Label>Email address</Form.Label>
                                         <Form.Control required type="email" placeholder="name@example.com" />
                                     </Form.Group>
-                                    <Form.Group controlId="emailto">
+                                    <Form.Group id="emailto">
                                         <Form.Label>Send To</Form.Label>
-                                        <Form.Control as="select">
+                                        <Form.Control as="select" id="selected" onChange={emailSelect}>
                                         <option>General CSC Email</option>
                                         <option>GCCIS CS Department</option>
                                         <option>Research Pillar</option>
@@ -46,12 +55,13 @@ function ContactUsPage() {
                                         <option>Exam Review Pillar</option>
                                         <option>Social Events Pillar</option>
                                         </Form.Control>
+                                        <Form.Control type="text" value="General CSC Email" id="dis_email" readOnly />
                                     </Form.Group>
-                                    <Form.Group controlId="emailsubject">
+                                    <Form.Group id="emailsubject">
                                         <Form.Label>Subject</Form.Label>
                                         <Form.Control required type="text" />
                                     </Form.Group>
-                                    <Form.Group controlId="emailbody">
+                                    <Form.Group id="emailbody">
                                         <Form.Label>Body</Form.Label>
                                         <Form.Control required as="textarea" rows={6} />
                                     </Form.Group>

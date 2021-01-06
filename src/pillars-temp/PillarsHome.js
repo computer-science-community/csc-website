@@ -4,9 +4,10 @@ import './PillarsPage.css';
 
 function PillarsHome() {
     return(
-        <Container>
+        <Container className="pillars">
             <Row>
-                <h1 className="pillar-h1">What is a Pillar</h1>
+                <h1 className="pillar-h1">What is a Pillar?</h1>
+                <p></p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
                     eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio 
                     euismod lacinia at quis risus sed vulputate. Habitasse platea 

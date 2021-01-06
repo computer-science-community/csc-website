@@ -5,17 +5,28 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { useState } from "react";
 
+{/* this function populates the readonly text field with the corresponding email address from the dropdown list in the form */}
 function emailSelect() {
-    var d = document.getElementById("selected");
+    var email_dic = {
+        "General CSC Email" : "csambassador@cs.rit.edu",
+        "GCCIS CS Department" : "csdept@cs.rit.edu",
+        "Research Pillar" : "csambassador@cs.rit.edu",
+        "Competitive Coding Pillar" : "csambassador@cs.rit.edu",
+        "Mentoring Pillar" : "csambassador@cs.rit.edu",
+        "Career Prep Pillar" : "csambassador@cs.rit.edu",
+        "Exam Review Pillar" : "csambassador@cs.rit.edu",
+        "Social Events Pillar" : "csambassador@cs.rit.edu"
+    }
+    var e = document.getElementById("selected");
     var displayText = "";
-    if (d) {
-        displayText = d.options[d.selectedIndex].text;
+    if (e) {
+        displayText = email_dic[e.options[e.selectedIndex].text];
         document.getElementById("dis_email").value = displayText;
     }
 }
 
 function ContactUsPage() {
-
+    {/* hands the validity for the form, to make sure that all imputs are filled */}
     const [validated, setValidated] = useState(false);
 
     const handleSubmit = (event) => {
@@ -27,6 +38,7 @@ function ContactUsPage() {
 
         setValidated(true);
     };
+    {/* ^^^^^^^^^^^^^^ */}
 
     return(
         <Container>
@@ -55,15 +67,15 @@ function ContactUsPage() {
                                         <option>Exam Review Pillar</option>
                                         <option>Social Events Pillar</option>
                                         </Form.Control>
-                                        <Form.Control type="text" value="General CSC Email" id="dis_email" readOnly />
+                                        <Form.Control type="text" value="csambassador@cs.rit.edu" id="dis_email" readOnly />
                                     </Form.Group>
                                     <Form.Group id="emailsubject">
                                         <Form.Label>Subject</Form.Label>
-                                        <Form.Control required type="text" />
+                                        <Form.Control required type="text" placeholder="Topic of Discussion" />
                                     </Form.Group>
                                     <Form.Group id="emailbody">
                                         <Form.Label>Body</Form.Label>
-                                        <Form.Control required as="textarea" rows={6} />
+                                        <Form.Control required as="textarea" rows={6} placeholder="Please enter a message here..." />
                                     </Form.Group>
                                     <Button className="float-right" variant="danger" type="submit" size="lg">Submit</Button>
                                 </Form>

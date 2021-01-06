@@ -5,7 +5,7 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { useState } from "react";
 
-{/* this function populates the readonly text field with the corresponding email address from the dropdown list in the form */}
+// this function populates the readonly text field with the corresponding email address from the dropdown list in the form 
 function emailSelect() {
     var email_dic = {
         "General CSC Email" : "csambassador@cs.rit.edu",
@@ -26,7 +26,7 @@ function emailSelect() {
 }
 
 function ContactUsPage() {
-    {/* hands the validity for the form, to make sure that all imputs are filled */}
+    // hands the validity for the form, to make sure that all imputs are filled
     const [validated, setValidated] = useState(false);
 
     const handleSubmit = (event) => {
@@ -38,7 +38,7 @@ function ContactUsPage() {
 
         setValidated(true);
     };
-    {/* ^^^^^^^^^^^^^^ */}
+    // ^^^^^^^^^^^^^^ 
 
     return(
         <Container>

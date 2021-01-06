@@ -3,10 +3,24 @@ import './ContactUsPage.css';
 import Card from 'react-bootstrap/Card';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import { useState } from "react";
 
 function ContactUsPage() {
+
+    const [validated, setValidated] = useState(false);
+
+    const handleSubmit = (event) => {
+        const form = event.currentTarget;
+        if (form.checkValidity() === false) {
+        event.preventDefault();
+        event.stopPropagation();
+        }
+
+        setValidated(true);
+    };
+
     return(
-        <Container className="contact">
+        <Container>
             <Row>
                 <Col>
                     <br />
@@ -14,8 +28,6 @@ function ContactUsPage() {
                     <Card className="about-card" border="danger">
                         <Card.Body>
                             <Card.Title>Contact Us</Card.Title>
-<<<<<<< HEAD
-                            <Card.Text>
                                 {/* Contact form starts here */}
                                 <Form noValidate validated={validated} onSubmit={handleSubmit}>
                                     <Form.Group controlId="emailfrom">
@@ -46,41 +58,6 @@ function ContactUsPage() {
                                     <Button className="float-right" variant="danger" type="submit" size="lg">Submit</Button>
                                 </Form>
                                 {/* Contact form ends here */}
-                            </Card.Text>
-=======
-                            <Form>
-                                <Form.Group controlId="exampleForm.ControlInput1">
-                                    <Form.Label>Email address</Form.Label>
-                                    <Form.Control type="email" placeholder="name@example.com" />
-                                </Form.Group>
-                                <Form.Group controlId="exampleForm.ControlSelect1">
-                                    <Form.Label>Example select</Form.Label>
-                                    <Form.Control as="select">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                    </Form.Control>
-                                </Form.Group>
-                                <Form.Group controlId="exampleForm.ControlSelect2">
-                                    <Form.Label>Example multiple select</Form.Label>
-                                    <Form.Control as="select" multiple>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                    </Form.Control>
-                                </Form.Group>
-                                <Form.Group controlId="exampleForm.ControlTextarea1">
-                                    <Form.Label>Example textarea</Form.Label>
-                                    <Form.Control as="textarea" rows={3} />
-                                </Form.Group>
-                                <Button className="float-right" variant="danger" type="submit" size="lg">Submit</Button>
-                            </Form>
-                            {/* Contact form ends here */}
->>>>>>> origin/main
                         </Card.Body>
                     </Card>
                     <br />

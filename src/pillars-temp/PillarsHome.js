@@ -1,27 +1,20 @@
 
-import { Container, Row } from 'react-bootstrap';
+import { Container} from 'react-bootstrap';
 import './PillarsPage.css';
 
 function PillarsHome() {
     return(
         <Container className="pillars">
-            <Row>
-                <h1 className="pillar-h1">What is a Pillar?</h1>
-                <p></p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio 
-                    euismod lacinia at quis risus sed vulputate. Habitasse platea 
-                    dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim. 
-                    Amet volutpat consequat mauris nunc congue nisi. Tristique risus nec 
-                    feugiat in fermentum posuere urna. Aliquet lectus proin nibh nisl. 
-                    Dui accumsan sit amet nulla facilisi morbi tempus. Feugiat in ante 
-                    metus dictum at tempor commodo ullamcorper a. Faucibus in ornare quam 
-                    viverra orci sagittis eu volutpat odio. Sapien faucibus et molestie ac 
-                    feugiat sed lectus vestibulum. Ultricies integer quis auctor elit. Non 
-                    blandit massa enim nec dui nunc mattis enim. Ullamcorper a lacus vestibulum 
-                    sed arcu non odio euismod lacinia. Viverra suspendisse potenti nullam 
-                    ac tortor vitae purus.</p>
-            </Row>
+            <h1 className="pillar-h1">What is a Pillar?</h1>
+            <p className="large-p">A Pillar is a commitee of officers in charge of organizing events for the community.
+                The Computer Science Community stands over three pillars: Competitive Coding, Mentoring, and Social Events. 
+                Regardless of their focus, every pillar exists to lift up members of the community in different ways by
+                providing ways to grow together.    
+            </p>
+            <p className="large-p">Every Pillar is lead by one or more Computer Science Ambassador, but they're supported
+                by every member of the community. Check out the rest of this page to learn more about every Pillar.
+
+            </p>
         </Container>
     );
 }

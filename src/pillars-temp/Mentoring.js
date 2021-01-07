@@ -7,7 +7,7 @@ function Mentoring() {
     return(
         <Container className="pillars">
             <h1 className="pillar-h1">Mentoring</h1>
-            <p className="large-p">Mentoring Pillar thingies    
+            <p className="large-p">Mentoring Pillar things    
             </p>
             <Row>
                 <Col><ProfileCard name="Giovana Puccini"/></Col>

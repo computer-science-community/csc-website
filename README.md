@@ -1,11 +1,10 @@
 # Running the application for the first time
 
-1. Run `npm start`
+1. Run `npm install`
 2. Install the needed VS extentions:
    - ESLint
    - Prettier - Code formatter
-3. restart VS Code if needed to enable extentions
-4. Paste the following into `settings.json`:
+3. Paste the following into `settings.json`:
    "eslint.alwaysShowStatus": true,
    "editor.formatOnSave": true,
    "[javascript]": {
@@ -15,10 +14,11 @@
    "prettier.disableLanguages": [
    "js"
    ]
-5. follow `csc-backend` ReadMe to set up and run backend
-6. run `npm start`
+4. Restart VS Code if needed to enable extentions
+5. Follow `csc-backend` ReadMe to set up and run backend
+6. Run `npm start`
 
 # Running the application
 
-1. follow `csc-backend` ReadMe to start backend
-2. run command: `npm start`
+1. Follow `csc-backend` ReadMe to start backend
+2. Run command: `npm start`

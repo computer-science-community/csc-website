@@ -1,26 +1,30 @@
 
-import { Container, Row } from 'react-bootstrap';
+import { Container, Row, Col} from 'react-bootstrap';
+import ProfileCard from '../common/ProfileCard.js';
 import './PillarsPage.css';
 
 function PillarsHome() {
     return(
         <Container className="pillars">
-            <Row>
-                <h1 className="pillar-h1">What is a Pillar?</h1>
-                <p></p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio 
-                    euismod lacinia at quis risus sed vulputate. Habitasse platea 
-                    dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim. 
-                    Amet volutpat consequat mauris nunc congue nisi. Tristique risus nec 
-                    feugiat in fermentum posuere urna. Aliquet lectus proin nibh nisl. 
-                    Dui accumsan sit amet nulla facilisi morbi tempus. Feugiat in ante 
-                    metus dictum at tempor commodo ullamcorper a. Faucibus in ornare quam 
-                    viverra orci sagittis eu volutpat odio. Sapien faucibus et molestie ac 
-                    feugiat sed lectus vestibulum. Ultricies integer quis auctor elit. Non 
-                    blandit massa enim nec dui nunc mattis enim. Ullamcorper a lacus vestibulum 
-                    sed arcu non odio euismod lacinia. Viverra suspendisse potenti nullam 
-                    ac tortor vitae purus.</p>
+            <h1 className="pillar-h1">What is a pillar?</h1>
+            <p className="large-p">A pillar is a commitee of officers in charge of organizing events for the community.
+                The Computer Science Community stands over three pillars: Competitive Coding, Mentoring, and Social Events.
+                Every pillar has a unique focus and leadership, an they all host events for both new and experienced members.  
+                Regardless of their focus, every pillar exists to lift up members of the community in different ways by
+                providing ways to grow together.
+            </p>
+            <p className="large-p">Every pillar is led by one or more Computer Science Ambassador, but they're supported
+                by every member of the community. As a member of the community, you can attend events hosted by any of the pillars,
+                but we encourage you to try all of them! Check out the rest of this page to learn more about every Pillar.
+            </p>
+            <br/>
+            <h4>Getting in Contact</h4>
+            <p className="large-p">If you want to learn even more about a pillar or would like to help organize events, 
+                please contact the apropriate person using our contact us page. For information about financials or marketing
+                contact Ayush or Mayo, respectively.</p>
+            <Row sm={2} xs={1}>
+                <Col><ProfileCard name="Ayush Goel" pronouns="He/Him/His"/></Col>
+                <Col><ProfileCard name="Oluwamayowa Olojo" pronouns="She/Her/Hers"/></Col>
             </Row>
         </Container>
     );

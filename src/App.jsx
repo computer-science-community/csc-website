@@ -1,14 +1,15 @@
-import HomePage from './home/HomePage.js';
-import AboutPage from './about/AboutPage.js';
-import PillarsPage from './pillars-temp/PillarsPage.js';
-import ContactUsPage from './contact/ContactUsPage.js';
-import Footer from './common/Footer.js';
+import React from 'react';
 import {
   BrowserRouter as Router,
   NavLink,
   Switch,
   Route,
-} from "react-router-dom";
+} from 'react-router-dom';
+import HomePage from './home/HomePage';
+import AboutPage from './about/AboutPage';
+import PillarsPage from './pillars-temp/PillarsPage';
+import ContactUsPage from './contact/ContactUsPage';
+import Footer from './common/Footer';
 import './index.css';
 
 function App() {
@@ -17,26 +18,26 @@ function App() {
       <Router>
         <header className="mdl-layout__header mdl-layout__header--waterfall header">
           <div className="mdl-layout__header-row logo-row">
-              <span className="mdl-layout__title">
-                  <div className="logo"></div>
-              </span>
+            <span className="mdl-layout__title">
+              <div className="logo" />
+            </span>
           </div>
           <div className="mdl-layout__header-row navigation-row mdl-layout--large-screen-only">
-              <nav className="mdl-navigation mdl-typography--body-1-force-preferred-font">
-                <NavLink exact to="/" className="mdl-navigation__link" activeClassName="is-active">Home</NavLink>
-                <NavLink exact to="/about" className="mdl-navigation__link" activeClassName="is-active">About</NavLink>
-                <NavLink exact to="/pillars" className="mdl-navigation__link" activeClassName="is-active">Pillars</NavLink>
-                <NavLink exact to="/contact" className="mdl-navigation__link" activeClassName="is-active">Contact Us</NavLink>
-              </nav>
-          </div>
-        </header>
-        <div className="mdl-layout__drawer mdl-layout--small-screen-only">
             <nav className="mdl-navigation mdl-typography--body-1-force-preferred-font">
               <NavLink exact to="/" className="mdl-navigation__link" activeClassName="is-active">Home</NavLink>
               <NavLink exact to="/about" className="mdl-navigation__link" activeClassName="is-active">About</NavLink>
               <NavLink exact to="/pillars" className="mdl-navigation__link" activeClassName="is-active">Pillars</NavLink>
               <NavLink exact to="/contact" className="mdl-navigation__link" activeClassName="is-active">Contact Us</NavLink>
             </nav>
+          </div>
+        </header>
+        <div className="mdl-layout__drawer mdl-layout--small-screen-only">
+          <nav className="mdl-navigation mdl-typography--body-1-force-preferred-font">
+            <NavLink exact to="/" className="mdl-navigation__link" activeClassName="is-active">Home</NavLink>
+            <NavLink exact to="/about" className="mdl-navigation__link" activeClassName="is-active">About</NavLink>
+            <NavLink exact to="/pillars" className="mdl-navigation__link" activeClassName="is-active">Pillars</NavLink>
+            <NavLink exact to="/contact" className="mdl-navigation__link" activeClassName="is-active">Contact Us</NavLink>
+          </nav>
         </div>
         <main className="mdl-layout__content">
           <Switch>
@@ -58,7 +59,6 @@ function App() {
       </Router>
     </div>
   );
-
 }
 
 export default App;

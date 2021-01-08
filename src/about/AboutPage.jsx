@@ -1,10 +1,11 @@
-import { Container, Row} from "react-bootstrap";
+import React from 'react';
+import { Container, Row } from 'react-bootstrap';
 import './AboutPage.css';
 
 function AboutPage() {
-    return (
-        <div className="about">
-            <Container>
+  return (
+    <div className="about">
+      <Container>
                 <Row>
                     <h1 className="about-h1 first">Who We Are</h1>
                     <p className="about-p">We are a community of students within the Computer
@@ -26,8 +27,8 @@ function AboutPage() {
                     More informations on pillars and their heads are in the pillar tab.</p>
                 </Row>
             </Container>
-        </div>
-    );
+    </div>
+  );
 }
 
 export default AboutPage;

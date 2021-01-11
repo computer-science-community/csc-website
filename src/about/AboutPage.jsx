@@ -9,57 +9,29 @@ function AboutPage() {
         <Row>
           <h1 className="about-h1 first">Who We Are</h1>
           <p className="about-p">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio
-            euismod lacinia at quis risus sed vulputate. Habitasse platea
-            dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim.
-            Amet volutpat consequat mauris nunc congue nisi. Tristique risus nec
-            feugiat in fermentum posuere urna. Aliquet lectus proin nibh nisl.
-            Dui accumsan sit amet nulla facilisi morbi tempus. Feugiat in ante
-            metus dictum at tempor commodo ullamcorper a. Faucibus in ornare quam
-            viverra orci sagittis eu volutpat odio. Sapien faucibus et molestie ac
-            feugiat sed lectus vestibulum. Ultricies integer quis auctor elit. Non
-            blandit massa enim nec dui nunc mattis enim. Ullamcorper a lacus vestibulum
-            sed arcu non odio euismod lacinia. Viverra suspendisse potenti nullam
-            ac tortor vitae purus.
+            We are a community of students within the Computer
+            Science Department. We strive to help another and build each other up. This
+            shines through our pillars: Mentoring, Competitive Coding, Exam Review, Research,
+            Social Events, and Career Preperation.
+
+          </p>
+        </Row>
+        <Row>
+          <h1 className="about-h1">Our Mission</h1>
+          <p className="about-p">
+            “The purpose of the CSC is to foster a community for RIT&apos;s
+            computing students and provide them with the resources and skills necessary to
+            succeed, both academically and professionally.”
 
           </p>
         </Row>
         <Row>
           <h1 className="about-h1">What We Do</h1>
-          <p className="about-p">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio
-            euismod lacinia at quis risus sed vulputate. Habitasse platea
-            dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim.
-            Amet volutpat consequat mauris nunc congue nisi. Tristique risus nec
-            feugiat in fermentum posuere urna. Aliquet lectus proin nibh nisl.
-            Dui accumsan sit amet nulla facilisi morbi tempus. Feugiat in ante
-            metus dictum at tempor commodo ullamcorper a. Faucibus in ornare quam
-            viverra orci sagittis eu volutpat odio. Sapien faucibus et molestie ac
-            feugiat sed lectus vestibulum. Ultricies integer quis auctor elit. Non
-            blandit massa enim nec dui nunc mattis enim. Ullamcorper a lacus vestibulum
-            sed arcu non odio euismod lacinia. Viverra suspendisse potenti nullam
-            ac tortor vitae purus.
-
-          </p>
-        </Row>
-        <Row>
-          <h1 className="about-h1">What We Stand For</h1>
           <p className="about-p last">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio
-            euismod lacinia at quis risus sed vulputate. Habitasse platea
-            dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim.
-            Amet volutpat consequat mauris nunc congue nisi. Tristique risus nec
-            feugiat in fermentum posuere urna. Aliquet lectus proin nibh nisl.
-            Dui accumsan sit amet nulla facilisi morbi tempus. Feugiat in ante
-            metus dictum at tempor commodo ullamcorper a. Faucibus in ornare quam
-            viverra orci sagittis eu volutpat odio. Sapien faucibus et molestie ac
-            feugiat sed lectus vestibulum. Ultricies integer quis auctor elit. Non
-            blandit massa enim nec dui nunc mattis enim. Ullamcorper a lacus vestibulum
-            sed arcu non odio euismod lacinia. Viverra suspendisse potenti nullam
-            ac tortor vitae purus.
+            We hold events related to each pillar and offer a space to
+            study or meet new people. Currently, all of our meetings occur virtually. For the
+            Spring of 2021, our active pillars are: Mentoring, Competitive Coding, and Social Events
+            . More informations on pillars and their heads are in the pillar tab.
 
           </p>
         </Row>

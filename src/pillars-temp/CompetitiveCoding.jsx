@@ -1,11 +1,42 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import ProfileCard from '../common/ProfileCard';
-import Yan from '../assets/ambassadors/yan.jpg';
+import EventCalendar from '../common/EventCalendar';
+// import Yan from '../assets/ambassadors/yan.jpg';
 import Placeholder from '../assets/ambassadors/placeholder.png';
 import './PillarsPage.css';
 
 function CompetitiveCoding() {
+  const dummyEvents = [
+    {
+      id: 1,
+      name: 'CodeSignal Workshop',
+      date: new Date(2021, 0, 30, 15, 0, 0),
+      description: 'Learn how to make your own tasks with well-designed tests',
+      link: 'https://campusgroups.rit.edu/',
+    },
+    {
+      id: 2,
+      name: 'Newbie Tournament',
+      date: new Date(2021, 1, 6, 20, 0, 0),
+      description: 'Tired of upperclasmates taking your spotlight? Come compete against other first years in a CodeSignal tournament!',
+      link: 'https://cs.rit.edu/',
+    },
+    {
+      id: 3,
+      name: 'Preping for HackerRank Skill Certification Tests',
+      date: new Date(2021, 1, 13, 20, 0, 0),
+      description: 'Learn how to prepare for HackerRank\' Skill Certification Tests to show off your skill to potential employers',
+      link: 'https://rit.edu/',
+    },
+    {
+      id: 4,
+      name: 'February Tournament',
+      date: new Date(2021, 1, 27, 20, 0, 0),
+      description: 'Join us for this month\'s tournament and show us what you got. Maybe this time you\'ll make the leaderboard!',
+      link: 'https://codesignal.com/',
+    },
+  ];
   return (
     <Container className="pillars">
       <h1 className="pillar-h1">Competitive Coding</h1>
@@ -31,11 +62,12 @@ function CompetitiveCoding() {
 
       <h4>Pillar Heads:</h4>
       <Row sm={2} xs={1}>
-        <Col><ProfileCard name="Yancarlos Diaz" pronouns="He/Him/His" image={Yan} /></Col>
+        <Col><ProfileCard name="Yancarlos Diaz" pronouns="He/Him/His" image={Placeholder} /></Col>
         <Col><ProfileCard name="Dade Wood" image={Placeholder} /></Col>
       </Row>
       <br />
       <h4>Upcoming Events:</h4>
+      <EventCalendar events={dummyEvents} />
     </Container>
   );
 }

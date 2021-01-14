@@ -1,7 +1,8 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import ProfileCard from '../common/ProfileCard';
-import Placeholder from '../assets/ambassadors/placeholder.png';
+import Ayush from '../assets/ambassadors/ayush.jpg';
+import Mayo from '../assets/ambassadors/mayo.JPG';
 import './PillarsPage.css';
 
 function PillarsHome() {
@@ -33,8 +34,8 @@ function PillarsHome() {
         For information about financials or marketing contact Ayush or Mayo, respectively.
       </p>
       <Row sm={2} xs={1}>
-        <Col><ProfileCard name="Ayush Goel" pronouns="He/Him/His" image={Placeholder} /></Col>
-        <Col><ProfileCard name="Oluwamayowa Olojo" pronouns="She/Her/Hers" image={Placeholder} /></Col>
+        <Col><ProfileCard name="Ayush Goel" pronouns="He/Him/His" image={Ayush} /></Col>
+        <Col><ProfileCard name="Oluwamayowa (Mayo) Olojo" pronouns="She/Her/Hers" image={Mayo} /></Col>
       </Row>
     </Container>
   );

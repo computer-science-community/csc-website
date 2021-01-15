@@ -2,8 +2,8 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import ProfileCard from '../common/ProfileCard';
 import EventCalendar from '../common/EventCalendar';
-// import Yan from '../assets/ambassadors/yan.jpg';
-import Placeholder from '../assets/ambassadors/placeholder.png';
+import Yan from '../assets/ambassadors/yan.jpg';
+import Dade from '../assets/ambassadors/dade.jpg';
 import './PillarsPage.css';
 
 function CompetitiveCoding() {
@@ -62,8 +62,8 @@ function CompetitiveCoding() {
 
       <h4>Pillar Heads:</h4>
       <Row sm={2} xs={1}>
-        <Col><ProfileCard name="Yancarlos Diaz" pronouns="He/Him/His" image={Placeholder} /></Col>
-        <Col><ProfileCard name="Dade Wood" image={Placeholder} /></Col>
+        <Col><ProfileCard name="Yancarlos Diaz" pronouns="He/Him/His" image={Yan} /></Col>
+        <Col><ProfileCard name="Dade Wood" pronouns="He/Him/His" image={Dade} /></Col>
       </Row>
       <br />
       <h4>Upcoming Events:</h4>

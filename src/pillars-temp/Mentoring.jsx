@@ -1,7 +1,8 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import ProfileCard from '../common/ProfileCard';
-import Placeholder from '../assets/ambassadors/placeholder.png';
+import Giovana from '../assets/ambassadors/giovana.jpg';
+import Art from '../assets/ambassadors/art.jpg';
 
 import './PillarsPage.css';
 
@@ -13,7 +14,8 @@ function Mentoring() {
         Mentoring Pillar things
       </p>
       <Row>
-        <Col><ProfileCard name="Giovana Puccini" image={Placeholder} /></Col>
+        <Col><ProfileCard name="Giovana (Gih) Puccini" pronouns="She/Her/Hers" image={Giovana} /></Col>
+        <Col><ProfileCard name="Artem (Art) Pugachev" pronouns="He/Him/His" image={Art} /></Col>
       </Row>
     </Container>
   );

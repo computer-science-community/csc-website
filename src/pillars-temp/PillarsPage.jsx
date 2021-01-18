@@ -5,7 +5,7 @@ import Tabs from 'react-bootstrap/Tabs';
 import Tab from 'react-bootstrap/Tab';
 import PillarsHome from './PillarsHome';
 import CompetitiveCoding from './CompetitiveCoding';
-import Mentoring from './Mentoring';
+import Coaching from './Coaching';
 import SocialEvents from './SocialEvents';
 
 function PillarsPage() {
@@ -23,8 +23,8 @@ function PillarsPage() {
         <Tab eventKey="code" title="Competitive Coding">
           <CompetitiveCoding />
         </Tab>
-        <Tab eventKey="mentoring" title="Mentoring">
-          <Mentoring />
+        <Tab eventKey="coaching" title="Coaching">
+          <Coaching />
         </Tab>
         <Tab eventKey="social" title="Social Events">
           <SocialEvents />

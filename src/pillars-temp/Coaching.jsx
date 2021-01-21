@@ -12,10 +12,19 @@ function Coaching() {
       <p className="large-p">
         Getting started in the computer science industry is not an easy task,
         but we are here to help. The purpose of this pillar is to provide
-        students with the opportunity to be coached by upperclassman students
+        students with the opportunity to be coached by upper classmates students
         who can help them succeed within the department and eventually in
-        industry.
+        industry. Coaches should also benefit from this program, as they will
+        have a chance to develop their leadership skills and create new
+        connections, all while helping newcomers navigate the same challanges
+        they have gone through.
       </p>
+      <h4>Signing Up</h4>
+      <p className="large-p">
+        If you wish to sign-up to be a coach or a newcomer please fill
+        <a href="https://forms.gle/F81XoxTXU2McLXUt8"> this form</a>
+      </p>
+      <h4>Pillar Heads:</h4>
       <Row>
         <Col>
           <ProfileCard
@@ -33,11 +42,6 @@ function Coaching() {
         </Col>
       </Row>
       <br />
-      <h4>Signing Up</h4>
-      <p>
-        If you wish to sign-up to be a coach or a newcomer please fill
-        <a href="https://forms.gle/F81XoxTXU2McLXUt8"> this form</a>
-      </p>
     </Container>
   );
 }

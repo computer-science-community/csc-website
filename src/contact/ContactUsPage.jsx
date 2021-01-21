@@ -13,7 +13,7 @@ function emailSelect() {
     'GCCIS CS Department': 'csdept@cs.rit.edu',
     'Research Pillar': 'csambassador@cs.rit.edu',
     'Competitive Coding Pillar': 'csambassador@cs.rit.edu',
-    'Mentoring Pillar': 'csambassador@cs.rit.edu',
+    'Coaching Pillar': 'csambassador@cs.rit.edu',
     'Career Prep Pillar': 'csambassador@cs.rit.edu',
     'Exam Review Pillar': 'csambassador@cs.rit.edu',
     'Social Events Pillar': 'csambassador@cs.rit.edu',
@@ -39,7 +39,7 @@ function ContactUsPage() {
 
     setValidated(true);
   };
-    // ^^^^^^^^^^^^^^
+  // ^^^^^^^^^^^^^^
 
   return (
     <Container>
@@ -54,31 +54,60 @@ function ContactUsPage() {
               <Form noValidate validated={validated} onSubmit={handleSubmit}>
                 <Form.Group id="emailfrom">
                   <Form.Label>Email address</Form.Label>
-                  <Form.Control required type="email" placeholder="name@example.com" />
+                  <Form.Control
+                    required
+                    type="email"
+                    placeholder="name@example.com"
+                  />
                 </Form.Group>
                 <Form.Group id="emailto">
                   <Form.Label>Send To</Form.Label>
-                  <Form.Control as="select" id="selected" onChange={emailSelect}>
+                  <Form.Control
+                    as="select"
+                    id="selected"
+                    onChange={emailSelect}
+                  >
                     <option>General CSC Email</option>
                     <option>GCCIS CS Department</option>
                     <option>Research Pillar</option>
                     <option>Competitive Coding Pillar</option>
-                    <option>Mentoring Pillar</option>
+                    <option>Coaching Pillar</option>
                     <option>Career Prep Pillar</option>
                     <option>Exam Review Pillar</option>
                     <option>Social Events Pillar</option>
                   </Form.Control>
-                  <Form.Control type="text" value="csambassador@cs.rit.edu" id="dis_email" readOnly />
+                  <Form.Control
+                    type="text"
+                    value="csambassador@cs.rit.edu"
+                    id="dis_email"
+                    readOnly
+                  />
                 </Form.Group>
                 <Form.Group id="emailsubject">
                   <Form.Label>Subject</Form.Label>
-                  <Form.Control required type="text" placeholder="Topic of Discussion" />
+                  <Form.Control
+                    required
+                    type="text"
+                    placeholder="Topic of Discussion"
+                  />
                 </Form.Group>
                 <Form.Group id="emailbody">
                   <Form.Label>Body</Form.Label>
-                  <Form.Control required as="textarea" rows={6} placeholder="Please enter a message here..." />
+                  <Form.Control
+                    required
+                    as="textarea"
+                    rows={6}
+                    placeholder="Please enter a message here..."
+                  />
                 </Form.Group>
-                <Button className="float-right" variant="danger" type="submit" size="lg">Submit</Button>
+                <Button
+                  className="float-right"
+                  variant="danger"
+                  type="submit"
+                  size="lg"
+                >
+                  Submit
+                </Button>
               </Form>
               {/* Contact form ends here */}
             </Card.Body>

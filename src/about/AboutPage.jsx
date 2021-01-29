@@ -7,30 +7,28 @@ function AboutPage() {
     <div className="about">
       <Container>
         <Row>
-          <h1 className="about-h1 first">Who We Are</h1>
+          <h1 className="about-h1 first">About us</h1>
           <p className="about-p">
-            We are a community of students within the Computer Science
-            Department. We strive to help another and build each other up. This
-            shines through our pillars: Coaching, Competitive Coding, Exam
-            Review, Research, Social Events, and Career Preperation.
+            The purpose of the CSC is to foster a community for RIT&apos;s
+            computing students and provide them with the space,
+            resources, and skills necessary to thrive socially, academically, and professionally.
+            The CSC is open to all RIT students interested in computer science,
+            regardless of their major.
           </p>
-        </Row>
-        <Row>
-          <h1 className="about-h1">Our Mission</h1>
           <p className="about-p">
-            “The purpose of the CSC is to foster a community for RIT&apos;s
-            computing students and provide them with the resources and skills
-            necessary to succeed, both academically and professionally.”
+            The CSC stands over three Pillars: Competitive Coding, Coaching, and Social Events.
+            Every pillar is overseen by one or more officers.
+            While the specific focus of every pillar may change over time,
+            their goal will always be to achieve the organization’s purpose.
+            For more informations on pillars and their heads, visit the pillars page.
           </p>
-        </Row>
-        <Row>
-          <h1 className="about-h1">What We Do</h1>
           <p className="about-p last">
-            We hold events related to each pillar and offer a space to study or
-            meet new people. Currently, all of our meetings occur virtually. For
-            the Spring of 2021, our active pillars are: Coaching, Competitive
-            Coding, and Social Events . More informations on pillars and their
-            heads are in the pillar tab.
+            General meetings will be held weekly.
+            All community members are invited to general meetings.
+            Officer meetings will also be held weekly at a different time.
+            Other meetings and events will be scheduled
+            on an ad hoc basis to maximize member participation.
+            Currently, all of our events will occur virtually.
           </p>
         </Row>
       </Container>

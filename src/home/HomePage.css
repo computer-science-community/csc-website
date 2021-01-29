@@ -1,15 +1,24 @@
 .home {
-    min-height: 1000px;
+  min-height: 1000px;
 }
 
-.banner{
-    background-image: url('https://superblendyyc.com/wp-content/uploads/2020/03/banner-placeholder-1.jpg'); /* this is a temporary image placeholder*/
-    padding-top: 15%;
-    padding-bottom: 15%;
-    position: relative;
-    background-repeat: no-repeat;
+.banner {
+  margin: 10px 1px;
+  background-image: url("../assets/candid.jpg"); /* this is a temporary image placeholder*/
+  background-position: 0% 10%;
+  background-size: cover;
+  padding-top: 15%;
+  padding-bottom: 15%;
+  position: relative;
+  background-repeat: no-repeat;
 }
 
-h1{
-    margin-left: 25%;
+#title-container {
+  background-color: #000000;
+  opacity: 50%;
+}
+
+#title {
+  text-align: center;
+  color: white;
 }

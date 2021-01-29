@@ -39,15 +39,14 @@ function ContactUsPage() {
 
     setValidated(true);
   };
-  // ^^^^^^^^^^^^^^
 
   return (
-    <Container>
+    <Container className="contact">
       <Row>
         <Col>
           <br />
           {/* Card is to create a nice container for the form */}
-          <Card className="about-card" border="danger">
+          <Card className="about-card">
             <Card.Body>
               <Card.Title>Contact Us</Card.Title>
               {/* Contact form starts here */}

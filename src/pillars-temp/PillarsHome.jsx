@@ -30,18 +30,22 @@ function PillarsHome() {
       <p className="large-p">
         If you want to learn even more about a pillar or would like to help
         organize events, please contact the apropriate person using our contact
-        us page. For information about financials or marketing contact Ayush or
-        Mayo, respectively.
+        us page. For information on how to become an officer contact Mayo Olojo.
+        If you have questions about financials, contact Ayush Goel.
       </p>
       <Row sm={2} xs={1}>
         <Col>
-          <ProfileCard name="Ayush Goel" pronouns="He/Him/His" image={Ayush} />
+          <ProfileCard
+            name="Oluwamayowa (Mayo) Olojo - President"
+            pronouns="She/Her/Hers"
+            image={Mayo}
+          />
         </Col>
         <Col>
           <ProfileCard
-            name="Oluwamayowa (Mayo) Olojo"
-            pronouns="She/Her/Hers"
-            image={Mayo}
+            name="Ayush Goel - Treasurer"
+            pronouns="He/Him/His"
+            image={Ayush}
           />
         </Col>
       </Row>

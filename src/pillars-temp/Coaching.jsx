@@ -21,11 +21,11 @@ function Coaching() {
       </p>
       <h4>Signing Up</h4>
       <p className="large-p">
-        If you wish to sign-up to be a coach or a newcomer please fill
-        <a href="https://forms.gle/F81XoxTXU2McLXUt8"> this form</a>
+        If you wish to sign-up to be a coach or a newcomer please fill&nbsp;
+        <a href="https://forms.gle/F81XoxTXU2McLXUt8">this form </a>
       </p>
       <h4>Pillar Heads:</h4>
-      <Row>
+      <Row sm={2} xs={1}>
         <Col>
           <ProfileCard
             name="Giovana (Gih) Puccini"

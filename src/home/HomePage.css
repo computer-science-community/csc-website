@@ -1,5 +1,7 @@
 .home {
   min-height: 1000px;
+  margin: 10px;
+  font-size: small;
 }
 
 .banner {
@@ -21,4 +23,8 @@
 #title {
   text-align: center;
   color: white;
+}
+
+.large-p {
+  font-size: large;
 }
